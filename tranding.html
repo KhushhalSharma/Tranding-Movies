@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- https://149837734.v2.pressablecdn.com/wp-content/uploads/2021/10/Best-Family-Movies-on-Disney-Plus-scaled-1.jpg -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #rolling > img {
+        width: 100%;
+        height: 300px;
+      }
+
+      #btn {
+        display: block;
+        margin: 5% auto;
+        padding: 10px 30px;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+      }
+
+      #btn:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+      }
+
+      #container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+        margin: auto;
+      }
+
+      #container > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      #container > div > img {
+        width: 120px;
+      }
+
+      #container > div > p {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="rolling"></div>
+
+    <button id="btn">Show Tranding Movies</button>
+
+    <div id="container"></div>
+
+    <script src="./tranding.js"></script>
+  </body>
+</html>
